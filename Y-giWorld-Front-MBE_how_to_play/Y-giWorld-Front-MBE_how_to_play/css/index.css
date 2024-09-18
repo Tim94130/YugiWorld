@@ -1,0 +1,107 @@
+:root {
+    background-color: #d1c8f5;
+    font-size: 63%;
+}
+* {           /* appliqué partout */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;    /*style ecriture */
+    margin: 0; /*supprime les marges */
+    padding: 0;  /* supprime les espacements internes */
+    color: #333;
+  }
+
+
+  h1,
+  h2,    /*appliqué pour h1 h2 h3 h4 */
+  h3,
+  h4 {
+    margin-bottom: 1rem; 
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    color: #500263;
+    margin-bottom: 4rem;
+    font-family: cursive;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    max-width: 80rem;
+    margin: 50px auto 0 auto;
+    padding: 2rem;
+}
+  .container > * {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .image {
+    width: 400px;
+    height: 300px;
+    margin-top: 10px; /* Moins d'espace en haut pour rapprocher l'image du haut de la page */
+    margin-bottom: 10px; /* Un peu d'espace en dessous */
+    
+}
+
+ 
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+/* BUTTONS */
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #7353e7;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #500263;
+    background-color: #dbefe1;
+  }
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #e61f93(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }

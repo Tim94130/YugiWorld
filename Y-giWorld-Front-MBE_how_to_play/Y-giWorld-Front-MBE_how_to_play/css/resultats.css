@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f0ff;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background: #500263;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    color: #dbefe1;
+    margin-bottom: 50px;
+}
+
+.score-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.score-heading {
+    font-size: 25px;
+    color: #dbefe1;
+    margin-bottom: 20px;
+}
+
+.score-display {
+    font-size: 40px;
+    font-weight: 600;
+    color: #dbefe1;
+    margin-bottom: 20px;
+}
+
+.percentage {
+    font-size: 20px;
+    color: #7bcab4;
+}
+
+#retry-btn {
+    background: #220dbf;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 2pc auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+#retry-btn:hover {
+    background: #222;
+    color: #fff;
+}
